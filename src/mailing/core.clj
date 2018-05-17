@@ -7,9 +7,8 @@
 ;; region Main program, illustrating the major use cases
 
 (defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println "Hello, World!")
+  "Demonstrate key use cases for accessing a Gmail account."
+  [& _]
 
   ; Set up the Gmail store and retrieve test mails
   (let [gstore         (xoauth2-store "imap.gmail.com" (env :username) (env :access-token))
